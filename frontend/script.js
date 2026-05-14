@@ -456,3 +456,9 @@ function completeCheckout() {
     }
     processPayment(selected.querySelector('.payment-info h4').innerText);
 }
+fetch('https://e-commerce-wd4p.onrender.com/api/projects')
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((err) => console.log(err));
